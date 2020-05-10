@@ -1,2 +1,77 @@
-我的第一个博客
-！！！
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      width: 505px;
+      height: 505px;
+      position: absolute;
+      left: calc(50% - 250px);
+      top: calc(50% - 250px);
+      border: 1px solid;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+  </div>
+  <script>
+    var wrapper = document.querySelector('.wrapper');
+    var divs = [];
+    for (var i = -166; i <= 166; i += 166) {
+      for (var j = -166; j <= 166; j += 166) {
+        var div = document.createElement('div');
+        div.style.float = 'left';
+        div.style.margin = '4px';
+        div.style.width = '166px';
+        div.style.height = '166px';
+        div.style.position = 'absolute';
+        div.style.left = `${j+166}px`;
+        div.style.top = `${i+166}px`;
+        div.style.transition = '0.7s';
+        div.pos = [(j+166) / 166, (i+166) / 166];
+        if (i === 0 && j === 0) {
+          div.className = 'blank';
+        } else {
+          div.style.background = `url(./img/lol.png) ${j}px ${i}px`;
+        }
+        divs.push(div);
+        // wrapper.appendChild(div);
+      }
+    }
+    divs.sort(function () { return Math.random() - 0.5; });
+    divs.forEach(function (div) {
+      wrapper.appendChild(div);
+    })
+
+    wrapper.onclick = function (e) {
+      var target = e.target;
+      var pos = target.pos;
+      var blank = document.getElementsByClassName('blank')[0];
+      var decX = Math.abs(pos[0]-blank.pos[0]);
+      var decY = Math.abs(pos[1]-blank.pos[1]);
+      if (decX == 1 && decY != 1) {
+        target.style.left = `${blank.pos[0]*166}px`;
+        blank.style.left = `${pos[0]*166}px`;
+        var temp = target.pos[0];
+        target.pos[0] = blank.pos[0];
+        blank.pos[0] = temp;
+      } else if (decX != 1 && decY == 1) {
+        target.style.top = `${(blank.pos[1])*166}px`;
+        blank.style.top = `${pos[1]*166}px`;
+        var temp = target.pos[1];
+        target.pos[1] = blank.pos[1];
+        blank.pos[1] = temp;
+      }
+    }
+
+  </script>
+</body>
+
+</html>
