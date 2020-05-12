@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>扫雷</title>
+  <style>
+    .wrapper {
+      text-align: center;
+    }
+    .mine {
+      margin: 20px auto;
+      /* color: #ccc; */
+    }
+    button {
+      outline: none;
+      border: none;
+      width: 80px;
+      height: 40px;
+      margin: 20px 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .restart {
+      width: 100px;
+      background: gold;
+    }
+    .active {
+      background: #008c8c;
+    }
+    .block {
+      background: #008c8c;
+      float: left;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="levelBtn">
+      <button class="active">新手</button>
+      <button class="">初级</button>
+      <button class="">中级</button>
+      <button class="">高级</button>
+      <button class="restart">重新开始</button>
+    </div>
+    <p class="mineNum"></p>
+    <div class="mine"></div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
