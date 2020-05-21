@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: #000;
+    }
+
+    .demo {
+      position: absolute;
+      width: 1000px;
+      height: 300px;
+      font-size: 200px;
+      font-weight: bold;
+      color: #ddd;
+      left: calc(50% - 500px);
+      top: calc(50% - 150px);
+      transition: all 1.5s;
+
+      background-image: url('./1.png');
+      background-repeat: no-repeat;
+      background-size: 1000px 300px;
+      /* background-position: -430px -255px; */
+      background-position: -1000px 0px;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+
+      text-shadow: 15px 15px 15px rgba(0, 255, 0, .1);
+    }
+    .demo:hover {
+      background-position: 0px 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="demo">COMING</div>
+</body>
+
+</html>
