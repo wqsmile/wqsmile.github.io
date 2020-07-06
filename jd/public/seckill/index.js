@@ -40,7 +40,7 @@ $('.seckill_silde_field').slideshow({
 // const end_minute = parseInt(end_time[1]);
 
 let end_hour = 0;
-while (end_hour < new Date().getHours()) {
+while (end_hour <= new Date().getHours()) {
   end_hour = Mock.mock({
     'number2|1-24': 1
   }).number2;
