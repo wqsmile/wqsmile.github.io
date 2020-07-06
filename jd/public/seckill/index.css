@@ -1,0 +1,205 @@
+.seckill {
+  height: 260px;
+  position: relative;
+  background: #fff;
+}
+
+/* 秒杀倒计时 */
+.seckill_countdown {
+  float: left;
+  width: 190px;
+  height: 100%;
+  background: url('./img/seckill.png');
+  background-size: cover;
+  position: relative;
+}
+.seckill_countdown > a {
+  display: block;
+  height: 100%;
+}
+.seckill_second {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 30px;
+}
+.seckill_end {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  bottom: 70px;
+  line-height: 20px;
+}
+.seckill_end span:last-child {
+  vertical-align: top;
+  font-size: 14px;
+}
+.seckill_end_time {
+  font-weight: bold;
+  font-size: 18px;
+}
+.seckill_time {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.seckill_time span:nth-child(odd) {
+  padding: 4px;
+  background: #333;
+  width: 25px;
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+}
+.seckill_time span:nth-child(even) {
+  padding: 2px;
+  vertical-align: text-top;
+}
+
+/* 秒杀区轮播图 */
+.seckill_slide {
+  float: left;
+  width: 800px;
+  height: 260px;
+}
+
+.seckill_slide_item {
+  width: 800px;
+  height: 260px;
+  float: left;
+}
+.seckill_slide_item > a {
+  display: inline-block;
+  width: 197px;
+  height: 260px;
+  text-align: center;
+  font-size: 14px;
+  border-right: 1px solid;
+  border-image-source: linear-gradient(to bottom, transparent 30%, #ddd 50%, transparent 70%);
+  border-image-slice: 40;
+  box-sizing: border-box;
+}
+.seckill_slide_item > a:last-child {
+  border: none;
+}
+.seckill_slide_item > a > img {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.seckill_item_info {
+  width: 160px;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.seckill_item_price {
+  width: 160px;
+  height: 22px;
+  border: 1px solid #e1251b;
+  margin: 5px auto;
+  position: relative;
+}
+.seckill_cur_price {
+  position: absolute;
+  left: 0px;
+  color: #fff;
+  display: inline-block;
+  width: 80px;
+  height: 22px;
+  background: #e1251b;
+}
+.seckill_cur_price::before {
+  content: '';
+  position: absolute;
+  right: -5px;
+  border-left: 5px solid #e1251b;
+  border-top: 0px solid #e1251b;
+  border-bottom: 24px solid transparent;
+}
+.seckill_before_price {
+  position: absolute;
+  right: 0;
+  width: 80px;
+  text-align: center;
+  text-decoration: line-through;
+  color: #ccc;
+}
+.seckill_slide_item > a:hover {
+  color: #e1251b;
+}
+
+/* 秒杀专场轮播图 */
+.seckill_silde_field {
+  float: left;
+  width: 180px;
+  height: 240px;
+  margin-left: 10px;
+  background-image: linear-gradient(to top, rgba(204, 204, 204, .2) 0%, transparent 50%);
+}
+
+.seckill_slide_item2 {
+  position: relative;
+  width: 180px;
+  height: 240px;
+  text-align: center;
+}
+.seckill_slide_item2 > a {
+  display: block;
+  width: 120px;
+  height: 120px;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.seckill_slide_item2 > a > img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.seckill_slide_item2:hover {
+  cursor: pointer;
+}
+.seckill_field_info {
+  position: relative;
+}
+
+.seckill_field_info0 {
+  font-size: 14px;
+}
+.seckill_field_info1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+.seckill_field_info3 {
+  position: relative;
+  border-radius: 8px;
+  width: 80px;
+  margin: 4px auto;
+  border: 1px solid #e1251b;
+  color: #e1251b;
+  padding: 1px;
+}
+.seckill_field_info3 span {
+  font-size: 12px;
+  margin: 0 5px;
+}
+.seckill_field_info3:hover {
+  background: #e1251b;
+  color: #fff;
+}

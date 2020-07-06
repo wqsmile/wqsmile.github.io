@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+  color: #666;
+  background: rgb(244, 244, 244);
+  overflow-y: scroll;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+
+
+
+.layer {
+  margin: 0 auto;
+  width: 1190px;
+}
+
+/* 顶部导航栏 */
+#shortcut {
+  border-bottom: 1px solid #ddd;
+  background: #e3e4e5;
+}
+
+/* 头部搜索区域 */
+#header {
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+/* 中间主内容区 */
+#main {
+  padding: 10px 0;
+  
+}
+@media screen and (min-width: 1662px) {
+  #main {
+    background: url('../img/ce5cb2d3f24a51c6.png.webp');
+  }
+}
+
+/* 秒杀区 */
+#seckill {
+  /* height: 260px; */
+}
