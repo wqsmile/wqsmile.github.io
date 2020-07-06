@@ -1,11 +1,11 @@
-const Random = Mock.Random;
+// const Random = Mock.Random;
 $('.main_center_item').each(function (index, item) {
-  var a = Mock.Random.image('590x470', Random.color(), Random.color(), 'jpg', Random.name())
+  var a = Random.image('590x470', Random.color(), Random.color(), 'jpg', Random.name())
   $(item).find('a img')[0].src = a
 });
 $('.main_center2_item').each(function (index, item) {
   $(item).find('a').each(function (index, item) {
-    var a = Mock.Random.image('190x150', Random.color(), Random.color(), 'jpg', Random.name())
+    var a = Random.image('190x150', Random.color(), Random.color(), 'jpg', Random.name())
     $(item).find('img')[0].src = a;
   })
 });

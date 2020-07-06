@@ -1,9 +1,10 @@
+// const Random = Mock.Random;
 $('.seckill_slide_item a').each(function (index, item) {
-    var a = Mock.Random.image('140x140', Random.color(), Random.color(), 'jpg', Random.name())
+    var a = Random.image('140x140', Random.color(), Random.color(), 'jpg', Random.name())
     $(item).find('img')[0].src = a;
 });
 $('.seckill_slide_item2').each(function (index, item) {
-  var a = Mock.Random.image('120x120', Random.color(), Random.color(), 'jpg', Random.name())
+  var a = Random.image('120x120', Random.color(), Random.color(), 'jpg', Random.name())
   $(item).find('a img')[0].src = a;
 });
 
@@ -46,10 +47,9 @@ while (end_hour <= new Date().getHours()) {
   }).number2;
 }
 // console.log(end_time, new Date().getTime());
-
 const end_minute = 0;
-
-$('.seckill_end_time').text(end_hour + ':00');
+const end_hour_show = end_hour === 24 ? '00' : end_hour;
+$('.seckill_end_time').text(end_hour_show + ':00');
 
 
 

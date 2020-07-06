@@ -3,3 +3,5 @@ $('#shortcut').load('./public/shortcut/index.html')
 $('#header').load('./public/header_search/index.html')
 $('#main').load('./public/main_content/index.html')
 $('#seckill').load('./public/seckill/index.html')
+
+const Random = Mock.Random;
