@@ -173,12 +173,12 @@ body {
   top: -71px;
   transform: rotate(-35deg);
   transform-origin: 10px 7px;
-  background: url(./img/a2c31.png);
+  background: url(/img/a2c31.png);
   background-size: cover;
   transition: linear .5s;
 }
 .song_img_img {
-  background: url(./img/75531.jpg);
+  background: url(/img/75531.jpg);
   width: 200px;
   height: 200px;
   border-radius: 50%;
